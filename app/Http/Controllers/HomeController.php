@@ -31,11 +31,7 @@ class HomeController extends Controller
     public function profile()
     {
 
-        //$users = User::all();
-        $users = User::where('id', 1)
-            ->orderBy('name', 'desc')
-            ->take(10)
-            ->get();
+        $users = User::all();
 
         dd($users->count());
 
