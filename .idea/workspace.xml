@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87db4491-d1d5-4131-896b-15e75cf3e50e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/Unit/CountCarTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/DeleteCarTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/DeleteCarTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,11 +97,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Unit/CountCarTest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/Unit/IntCheckTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -171,6 +178,7 @@
         <option value="$PROJECT_DIR$/tests/Unit/UpdateCarTest.php" />
         <option value="$PROJECT_DIR$/tests/Unit/DeleteCarTest.php" />
         <option value="$PROJECT_DIR$/tests/Unit/CountCarTest.php" />
+        <option value="$PROJECT_DIR$/tests/Unit/IntCheckTest.php" />
       </list>
     </option>
   </component>
@@ -401,7 +409,7 @@
       <workItem from="1556147982737" duration="111000" />
       <workItem from="1556318284218" duration="3468000" />
       <workItem from="1556377439274" duration="16933000" />
-      <workItem from="1556581625224" duration="18443000" />
+      <workItem from="1556581625224" duration="20156000" />
     </task>
     <task id="LOCAL-00001" summary="Write a feature test to check if the register return a 200 status code">
       <created>1556501238281</created>
@@ -473,14 +481,28 @@
       <option name="project" value="LOCAL" />
       <updated>1556758840335</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Create a unit test to test to count the number of records inserted by the database seed i.e. $carCount = 50">
+      <created>1556764589697</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1556764589697</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Create a unit test to check if a car's year is an integer">
+      <created>1556765765583</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1556765765583</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60575000" />
+    <option name="totallyTimeSpent" value="62288000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965197" visible="true" weight="0.26928896" />
       <window_info id="Structure" order="1" sideWeight="0.50348026" side_tool="true" weight="0.2690513" />
@@ -496,7 +518,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.30441898" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.38952535" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -518,14 +540,11 @@
     <MESSAGE value="Create a unit test to test inserting a car" />
     <MESSAGE value="Create a unit test to test updating a car year to 2000" />
     <MESSAGE value="Create a unit test to test deleting a car" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create a unit test to test deleting a car" />
+    <MESSAGE value="Create a unit test to test to count the number of records inserted by the database seed i.e. $carCount = 50" />
+    <MESSAGE value="Create a unit test to check if a car's year is an integer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create a unit test to check if a car's year is an integer" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -849,6 +868,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/IntCheckTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
         </state>
       </provider>
     </entry>
