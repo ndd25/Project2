@@ -7,7 +7,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\User;
 use App\Car;
 
-class DeleteCarTest extends TestCase
+class CountCarTest extends TestCase
 {
     /**
      * A basic test example.
@@ -17,8 +17,7 @@ class DeleteCarTest extends TestCase
     public function testBasicTest()
     {
         $car = Car::all();
-        $car->delete();
-        $this->assertTrue($car->year);
+        $this->assertTrue(50,$car);
     }
 
 
